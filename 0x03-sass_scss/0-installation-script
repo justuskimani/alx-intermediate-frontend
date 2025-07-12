@@ -1,0 +1,41 @@
+# Steps I Took to Install SASS
+
+1. **Checked if Node.js and npm were installed**
+   - I opened my terminal and ran:
+     ```bash
+     node -v
+     npm -v
+     ```
+   - If not installed, I downloaded Node.js from [nodejs.org](https://nodejs.org)
+
+2. **Installed Sass globally using npm**
+   ```bash
+   npm install -g sass
+
+3. Confirmed Sass installation
+
+sass --version
+
+This showed the version number, meaning Sass was installed correctly.
+
+
+
+4. Created a test SCSS file and compiled it
+
+Example SCSS file:
+
+$primary-color: blue;
+
+body {
+  background-color: $primary-color;
+}
+
+I compiled it to CSS using:
+
+sass style.scss style.css
+
+
+
+5. Used the --watch option to auto-compile on save
+
+sass --watch style.scss:style.css
